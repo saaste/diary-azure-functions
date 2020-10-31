@@ -1,0 +1,22 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "put",
+        "delete"
+      ],
+      "route": "entries/{entryId}"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/SingleEntry/index.js"
+}

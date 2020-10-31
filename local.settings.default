@@ -1,0 +1,12 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "SECRET": "super secret",
+    "EMAIL": "test@email.com",
+    "PASSWORD": "password",
+    "DB_ENDPOINT": "",
+    "DB_KEY": ""
+  }
+}
