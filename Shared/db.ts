@@ -55,7 +55,7 @@ export const updateEntry = async (entryId: string, timestamp: number, content: s
     const updatedEntry: Entry = {
         id: entryId,
         timestamp: timestamp,
-        content: content
+        content: content.trim()
     }
 
     try {

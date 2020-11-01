@@ -16,7 +16,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         const newEntry: DBEntry = {
             id: uuid(),
             timestamp: payload.timestamp,
-            content: payload.content
+            content: payload.content.trim()
         }
         await repo.items.create(newEntry);
 
